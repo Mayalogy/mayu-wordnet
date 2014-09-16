@@ -7,13 +7,6 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>mayu-wordnet</name>
     <url>http://maven.apache.org</url>
-    <repositories>
-        <repository>
-          <id>mayalogy.com</id>
-          <name>shitters</name>
-          <url>http://localhost:8000/mavenRepo/</url>
-        </repository>
-    </repositories>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -45,15 +38,15 @@
         
         <!-- TODO REPLACE THESE W/ A PUBLIC REPOSITORY POINTER -->
         <dependency>
-             <groupId>wordnet-rita</groupId>
-             <artifactId>wordnet-rita</artifactId>
+             <groupId>a-wordnet-rita</groupId>
+             <artifactId>a-wordnet-rita</artifactId>
              <scope>system</scope>
              <version>0.0.1</version>
              <systemPath>${project.basedir}/external/lib/ritaWN.jar</systemPath>
         </dependency>
         <dependency>
-             <groupId>wordnet-rita-support</groupId>
-             <artifactId>wordnet-rita-support</artifactId>
+             <groupId>a-wordnet-rita-support</groupId>
+             <artifactId>a-wordnet-rita-support</artifactId>
              <scope>system</scope>
              <version>0.0.1</version>
              <systemPath>${project.basedir}/external/lib/supportWN.jar</systemPath>
@@ -94,28 +87,6 @@
                             </configuration>
                         </execution>
                     </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.googlecode.addjars-maven-plugin</groupId>
-                <artifactId>addjars-maven-plugin</artifactId>
-                <version>1.0.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>add-jars</goal>
-                        </goals>
-                        <configuration>
-                            <resources>
-                                <resource>
-                                    <directory>${project.basedir}/external/lib</directory>
-                                        <includes>
-                                            <include>**/*.jar</include>
-                                        </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
