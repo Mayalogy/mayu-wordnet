@@ -38,20 +38,15 @@
         
         <!-- TODO REPLACE THESE W/ A PUBLIC REPOSITORY POINTER -->
         <dependency>
-             <groupId>a-wordnet-rita</groupId>
-             <artifactId>a-wordnet-rita</artifactId>
-             <scope>system</scope>
+             <groupId>com.xyonix.external</groupId>
+             <artifactId>wordnet-rita</artifactId>
              <version>0.0.1</version>
-             <systemPath>${project.basedir}/external/lib/ritaWN.jar</systemPath>
         </dependency>
         <dependency>
-             <groupId>a-wordnet-rita-support</groupId>
-             <artifactId>a-wordnet-rita-support</artifactId>
-             <scope>system</scope>
+             <groupId>com.xyonix.external</groupId>
+             <artifactId>wordnet-rita-support</artifactId>
              <version>0.0.1</version>
-             <systemPath>${project.basedir}/external/lib/supportWN.jar</systemPath>
         </dependency>
-        
         <dependency>
             <groupId>net.sf.jwordnet</groupId>
             <artifactId>jwnl</artifactId>
